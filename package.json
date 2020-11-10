@@ -1,0 +1,28 @@
+{
+  "name": "jenkins-ci",
+  "version": "1.0.0",
+  "description": "Cypress with Jenkins CI Pipeline",
+  "main": "index.js",
+  "scripts": {
+    "cy:open": "cypress open",
+    "cy:run": "cypress run",
+    "cy:run:chrome": "cypress run --browser chrome",
+    "cy:run:firefox": "cypress run --browser firefox",
+    "cy:run:electron": "cypress run --browser electron",
+    "cy:run:edge": "cypress run --browser edge"
+  },
+  "keywords": [
+    "Jenkins"
+  ],
+  "author": "Peter",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^5.6.0",
+    "cypress-cucumber-preprocessor": "^4.0.0",
+    "cypress-image-snapshot": "^3.1.1",
+    "prettier": "^2.1.2"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true
+  }
+}
